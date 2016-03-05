@@ -1,6 +1,6 @@
 # Built application files
 *.iml
-.idea/
+Counter/.idea/
 *.apk
 *.ap_
 
