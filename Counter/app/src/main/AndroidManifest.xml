@@ -16,10 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
-            android:name=".DisplayMessageActivity"
+            android:name="com.juan.counter.DisplayMessageActivity"
             android:label="@string/title_activity_display_message"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="com.juan.counter.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.juan.counter.MainActivity" />
