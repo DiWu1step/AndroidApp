@@ -48,7 +48,7 @@ public class GPSTracker extends Service implements LocationListener{
                 canGetLocation = true;
                 if(isGPSEnabled){
                     locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, Min_Time_BW_Update,Min_Dis_To_Update,this);
-                    Log.d("GPS GPS");
+                    Log.d("GPS","GPS");
                     location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
                     if(location != null){
                         lagtitude = location.getLatitude();
@@ -58,7 +58,7 @@ public class GPSTracker extends Service implements LocationListener{
                     }
                 }else if(isNetEnabled){
                     locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, Min_Time_BW_Update,Min_Dis_To_Update,this);
-                    Log.d("NETWORK NETWORK");
+                    Log.d("NETWORK","NETWORK");
                     location = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
                     if(location != null){
                         lagtitude = location.getLatitude();

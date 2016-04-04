@@ -23,9 +23,9 @@ public class GPSTrackingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gpstracking);
-        btnShowLocation = findViewById(R.id.btnShowLocation);
+        btnShowLocation = (Button)findViewById(R.id.btnShowLocation);
         btnShowLocation.setOnClickListener(new View.OnClickListener(){
-            public void onClick(){
+            public void onClick(View args0){
                 gpsTracker = new GPSTracker(GPSTrackingActivity.this);
                 if(gpsTracker.canGetLocation){
                     double latitude = gpsTracker.lagtitude;
